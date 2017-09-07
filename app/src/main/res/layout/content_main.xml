@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rl_container_main"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map_google_maps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Spinner
+        android:id="@+id/sp_search_tracking" android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" style="@style/spinner_style"
+        android:visibility="invisible">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/tv_vehicle_tracking" android:layout_width="110dp"
+        android:layout_height="50dp" android:textSize="15sp"
+        android:textStyle="bold" android:layout_below="@id/sp_search_tracking"
+        android:layout_alignParentRight="true" android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ib_refresh_main"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="false"
+        android:src="@drawable/icon_refresh"
+        android:background="@drawable/btn_refresh_selector_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        />
+
+</RelativeLayout>

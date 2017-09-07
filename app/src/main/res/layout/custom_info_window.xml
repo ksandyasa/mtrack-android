@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_alert_info_window"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_alert"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_title_info_window" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="@dimen/text_info_window"
+        android:textColor="@color/colorBlack" android:text="Title Window Title"
+        android:padding="5dp" android:background="@drawable/custom_info_window_red_bg"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_pos_info_window" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textSize="@dimen/text_info_window"
+        android:textColor="@color/colorBlack" android:text="Pos Window Pos"
+        android:padding="5dp" android:background="@drawable/custom_info_window_red_bg"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_marker_info_window"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:scaleType="fitCenter" android:src="@drawable/icon_north"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

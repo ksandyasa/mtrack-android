@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/ll_container_historical">
+
+    <LinearLayout
+        android:id="@+id/ll_content1_historical"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="130dp" android:layout_weight="1"
+            android:background="@drawable/layout_date_parking_bg">
+
+            <TextView
+                android:id="@+id/tv_title_date_historical" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:text="Date Range" android:textColor="@color/colorBlack"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/ed_from_historical" android:layout_width="@dimen/width_edittext_from_parking"
+                android:layout_height="35dp" android:inputType="text"
+                android:layout_below="@id/tv_title_date_historical" android:textSize="@dimen/text_edittext_from_parking"
+                android:layout_marginTop="5dp" android:hint="From"/>
+
+            <EditText
+                android:id="@+id/ed_to_historical" android:layout_width="@dimen/width_edittext_to_parking"
+                android:layout_height="35dp" android:inputType="text"
+                android:layout_below="@id/ed_from_historical" android:textSize="@dimen/text_edittext_to_parking"
+                android:layout_marginTop="5dp" android:hint="To"/>
+
+            <ImageButton
+                android:id="@+id/btn_from_date_historical" android:layout_width="@dimen/width_button_from_parking"
+                android:layout_height="@dimen/width_button_from_parking" android:layout_toRightOf="@id/ed_from_historical"
+                android:layout_below="@id/tv_title_date_historical" android:layout_marginTop="30dp"
+                android:layout_marginLeft="2.5dp" android:background="@drawable/transparent_bg"
+                android:scaleType="fitCenter" android:src="@drawable/icon_calendar"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_height="130dp"
+            android:layout_weight="1" android:background="@drawable/layout_asset_parking_bg">
+
+            <TextView
+                android:id="@+id/tv_assetcode_historical" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:text="Asset" android:textColor="@color/colorBlack"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_asset_historical" android:layout_width="match_parent"
+                android:layout_height="80dp" android:layout_below="@id/tv_assetcode_historical"
+                android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp" android:background="@drawable/list_asset_parking_bg"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/rl_refresh_asset_historical" android:layout_width="match_parent"
+                android:layout_height="80dp" android:layout_below="@id/tv_assetcode_historical"
+                android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp" android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_refresh_asset_historical"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_refresh"
+                    android:scaleType="fitCenter"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Click the image to reload data."
+                    android:layout_below="@id/iv_refresh_asset_historical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2.5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="80dp"
+        android:orientation="vertical" android:background="@drawable/last_position_list_bg"
+        android:id="@+id/rl_content2_historical">
+
+        <Button
+            android:id="@+id/btn_viewreport_historical" android:layout_width="125dp"
+            android:layout_height="40dp" android:textSize="@dimen/text_button_view_report_parking"
+            android:text="View Report" android:textAllCaps="false"
+            android:textColor="@color/colorWhite" android:background="@drawable/btn_selector_bg"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/ll_report_historical" android:visibility="invisible"
+        android:layout_marginTop="10dp" android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_assetcode_report_parking" android:textColor="@color/colorBlack"
+                    android:text="Parking Report " android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:id="@+id/tv_assetreport_historical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_scrollreport_historical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/icon_double_down"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="@dimen/text_fromto_report_parking" android:textColor="@color/colorBlack"
+            android:text="From To" android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/tv_datereport_historical" android:layout_marginTop="2.5dp"
+            android:layout_below="@id/tv_assetreport_historical"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content" android:layout_marginTop="2.5dp"
+            android:layout_height="match_parent" android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/tv_datereport_historical" android:id="@+id/hsv_report_historical">
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center"
+                    android:background="@drawable/list_item_lastposition_bg1" android:padding="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content" android:textSize="14sp"
+                        android:textColor="@color/colorBlack" android:layout_weight="1.5"
+                        android:text="No." android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Asset Code" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Datetime" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="250dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Address" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Vhcl. Status" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Eng. Status" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Distance" android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="150dp" android:layout_height="wrap_content"
+                        android:textSize="14sp" android:textColor="@color/colorBlack"
+                        android:text="Speed" android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_report_historical" android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

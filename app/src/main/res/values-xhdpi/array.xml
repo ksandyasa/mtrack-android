@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sp_search_tracking">
+        <item>All Vehicle</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+        <item>B 1540 TKX</item>
+    </string-array>
+
+    <string-array name="report_items">
+        <item>Last Position</item>
+        <item>Parking</item>
+        <item>Alert</item>
+        <item>Historical</item>
+    </string-array>
+
+    <string-array name="alert_items">
+        <item>Overspeed</item>
+        <item>Out of Geofence</item>
+    </string-array>
+
+</resources>

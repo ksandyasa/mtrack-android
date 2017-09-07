@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:orientation="vertical" android:id="@+id/ll_container_lastposition1">
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center"
+            android:background="@drawable/list_item_lastposition_bg1"
+            >
+
+            <TextView
+                android:layout_width="25dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="No." android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="120dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Asset Code" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="250dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Address vehicle" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="150dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Date and Time" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="80dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Vch. Status" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="80dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Eng. Status" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="150dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="GSM" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="80dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Distance" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="80dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Speed" android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="200dp" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/colorBlack"
+                android:text="Duration" android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_lastposition1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#19000000"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:choiceMode="singleChoice"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>

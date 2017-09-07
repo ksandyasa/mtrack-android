@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "43873821494",
+    "project_id": "m-track-1316"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43873821494:android:fbb35e0c0b5379c0",
+        "android_client_info": {
+          "package_name": "id.kreasisejahterateknologi.mtrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43873821494-1fsv4sqb2fqgjbmpsnllsh28hb9qe39k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuGArWEyZLKQakycabX5Ccg_HnabnYgUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43873821494:android:bcdd62e21a1de935",
+        "android_client_info": {
+          "package_name": "com.example.mtrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43873821494-vnibdurdf988n2p5iagcv8r3svh24dtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mtrack",
+            "certificate_hash": "526555C77D681B28E8B2DB4EF7162F0C37B37436"
+          }
+        },
+        {
+          "client_id": "43873821494-1fsv4sqb2fqgjbmpsnllsh28hb9qe39k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuGArWEyZLKQakycabX5Ccg_HnabnYgUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

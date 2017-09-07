@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_search_tracking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/ed_search_tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="Vehicle"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_search_tracking" android:layout_width="100dp"
+        android:layout_height="wrap_content" android:text="Search"
+        android:textSize="15sp" android:layout_alignParentRight="true"
+        android:layout_below="@id/til_search_tracking"/>
+
+</RelativeLayout>

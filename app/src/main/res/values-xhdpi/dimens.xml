@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_detail">14sp</dimen>
+    <dimen name="text_button_tracking">15sp</dimen>
+    <dimen name="text_info_window">12sp</dimen>
+    <dimen name="width_edittext_from_parking">140dp</dimen>
+    <dimen name="width_edittext_to_parking">140dp</dimen>
+    <dimen name="width_button_from_parking">40dp</dimen>
+    <dimen name="width_button_to_parking">40dp</dimen>
+    <dimen name="text_edittext_from_parking">12sp</dimen>
+    <dimen name="text_edittext_to_parking">12sp</dimen>
+    <dimen name="text_button_view_report_parking">15sp</dimen>
+    <dimen name="text_assetcode_report_parking">20sp</dimen>
+    <dimen name="text_fromto_report_parking">16sp</dimen>
+    <item name="width_rl_list_last_position" format="float" type="dimen">3.25</item>
+    <item name="width_rl_content_last_position" format="float" type="dimen">6.75</item>
+    <dimen name="load_more_trigger_offset_google">88dp</dimen>
+    <dimen name="load_more_final_offset_google">120dp</dimen>
+    <dimen name="refresh_trigger_offset_google">100dp</dimen>
+    <dimen name="refresh_final_offset_google">150dp</dimen>
+    <dimen name="list_item_last_position1_text_size">14sp</dimen>
+    <dimen name="header_menu_height">150dp</dimen>
+    <dimen name="show_traffic_text_size">15sp</dimen>
+    <dimen name="show_traffic_width">125dp</dimen>
+
+</resources>

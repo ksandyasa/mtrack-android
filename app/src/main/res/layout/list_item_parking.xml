@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center"
+    android:id="@+id/ll_container_item_parking" android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_indeks_item_parking" android:layout_width="25dp"
+        android:layout_height="wrap_content" android:textSize="14sp"
+        android:textColor="@color/colorBlack" android:layout_weight="1.5"
+        android:text="No." android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_assetcode_item_parking" android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Asset Code" android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_toff_item_parking" android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Timestamp off" android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_ton_item_parking" android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Timestamp on" android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_duration_item_parking" android:layout_width="250dp"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Duration" android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_address_item_parking" android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Address" android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_distance_item_parking" android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" android:textColor="@color/colorBlack"
+        android:text="Distance" android:gravity="center"
+        />
+
+</LinearLayout>

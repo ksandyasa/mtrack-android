@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="36dp"
+    android:id="@+id/rl_container_item_asset_parking" android:padding="5dp"
+    android:background="@drawable/list_item_asset_parking_bg">
+
+    <TextView
+        android:id="@+id/tv_title_item_asset_parking" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="12sp"
+        android:textColor="@color/colorBlack" android:layout_centerInParent="true"/>
+
+</RelativeLayout>

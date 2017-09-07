@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_tracking"
+            android:checked="false"
+            android:icon="@drawable/icon_tracking"
+            android:title="Tracking" />
+
+        <item
+            android:id="@+id/menu_report"
+            android:checked="false"
+            android:icon="@drawable/icon_report"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:checked="false"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout" />
+
+        <item
+            android:id="@+id/menu_about"
+            android:checked="false"
+            android:icon="@drawable/icon_about"
+            android:title="About" />
+
+    </group>
+</menu>

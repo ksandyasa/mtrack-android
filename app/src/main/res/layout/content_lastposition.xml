@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="10"
+    android:id="@+id/ll_container_lastposition">
+
+    <RelativeLayout
+        android:id="@+id/rl_refresh_last_position"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_refresh_last_position"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_refresh"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_refresh_last_positon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="Click above image to reload data."
+            android:layout_below="@id/iv_refresh_last_position"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_list_last_position" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="@dimen/width_rl_list_last_position">
+
+        <ListView
+            android:id="@+id/lv_last_position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:listSelector="?android:attr/activatedBackgroundIndicator"
+            >
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content_last_position" android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="@dimen/width_rl_content_last_position"
+        android:background="@drawable/last_position_bg">
+
+        <TextView
+            android:id="@+id/tv_assetcode_lastposition" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="21sp"
+            android:textStyle="bold" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:text="Asset Code"
+            android:layout_marginTop="@dimen/activity_vertical_margin" android:textColor="#000000"/>
+
+        <TableLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:shrinkColumns="*" android:stretchColumns="*"
+            android:layout_below="@id/tv_assetcode_lastposition">
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_title_timestamp_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Date/time"
+                    android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginLeft="10dp"
+                    android:layout_weight="3.5" android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_dot_timestamp_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_weight="0.25" android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_value_timestamp_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_weight="6.25"
+                    android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_address_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Address"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_address_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_value_address_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_status_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Vhcl. Status"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_status_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_value_status_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_engine_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Eng. Status"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_engine_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_value_engine_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_gsm_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="GSM Number"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_dot_gsm_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_value_gsm_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_distance_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Distance"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_dot_distance_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_value_distance_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_speed_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Speed"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_speed_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_value_speed_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_duration_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Duration"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_duration_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_value_duration_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:weightSum="10" android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_alert_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text="Alert Status"
+                    android:layout_weight="3.5" android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dot_alert_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=":"
+                    android:layout_weight="0.25" android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_value_alert_lastposition" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:textSize="@dimen/text_detail"
+                    android:textStyle="normal" android:text=""
+                    android:layout_weight="6.25" android:gravity="center_vertical"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_viewmap_last_position" android:layout_width="110dp"
+            android:layout_height="44dp" android:text="View Map"
+            android:textSize="@dimen/text_button_tracking" android:textAllCaps="false"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp" android:background="@drawable/btn_selector_bg"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

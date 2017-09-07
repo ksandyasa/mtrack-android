@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="125dp"
+    android:background="@drawable/header_menu_bg" android:paddingTop="20dp"
+    android:paddingLeft="20dp" android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_title_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Username"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorWhite"
+        />
+
+</RelativeLayout>
